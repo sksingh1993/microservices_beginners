@@ -1,7 +1,6 @@
 package com.techsoft.filter;
 
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.stereotype.Service;
@@ -12,8 +11,6 @@ import java.security.Key;
 public class JwtService {
 
     public static final String SECRET ="1231231312313131313131313131313131313131313123424242424242342242";
-
-
 
     public void validateToken(String token){
         Jwts.parserBuilder()
